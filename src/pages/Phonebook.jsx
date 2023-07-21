@@ -5,6 +5,7 @@ import { ContactList } from '../components/ContactList/ContactList';
 import { ContactFind } from '../components/ContactFind/ContactFind';
 import { fetchAllContacts } from 'redux/operations';
 import { selectIsLoading, selectError } from 'redux/selectors';
+import css from './Phonebook.module.css'
 
 export default function Phonebook() {
   const dispatch = useDispatch();
@@ -16,13 +17,21 @@ export default function Phonebook() {
   }, [dispatch]);
 
   return (
-    <div>
-      <h1>Phonebook</h1>
+    <div className={css.wrap}>
+      <h2>Phonebook</h2>
       <ContactForm />
-      <h2>Contacts</h2>
+      <h3>Contacts</h3>
       <ContactFind />
       {isLoading && !error && <b>Request in progress...</b>}
       <ContactList />
     </div>
   );
 };
+// const styles = {
+//   container: {
+//     minHeight: 'calc(100vh - 50px)',
+//     display: 'flex',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   }
+//   };
