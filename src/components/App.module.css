@@ -11,3 +11,8 @@
     text-align: center;
     color: white;
 } */
+
+.container {
+    /* max-width: 1200px; */
+    width: 700px;
+};

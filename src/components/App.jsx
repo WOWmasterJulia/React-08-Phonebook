@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 import { RestrictedRoute } from './RestrictedRoute';
 import { PrivateRoute } from './PrivateRoute';
 
+import css from './App.module.css'
 const Register = lazy(() => import('../pages/Register'));
 const Home = lazy(() => import('../pages/Home'));
 const Login = lazy(() => import('../pages/Login'));
@@ -24,18 +25,34 @@ export const App = () => {
   return isRefreshing ? (
     <b>Refreshing user...</b>
   ) : (
-  <div>
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="register" element={<RestrictedRoute redirectTo="/contacts" component={<Register />}/>}/>
-        <Route path="login" element={<RestrictedRoute redirectTo="/contacts" component={<Login />}/>}/>
-        <Route path="contacts" element={<PrivateRoute redirectTo="/" component={<Phonebook />} />}/>
-        {/* <Route path="profile" element={<PrivateRoute redirectTo="/" component={<ProfileView />} />}/>
-        <Route path="profile/edit" element={<PrivateRoute redirectTo="/" component={<EditProfileView />} />}/> */}
-        <Route path="*" element={<NotFound />} />
-      </Route>
-    </Routes>
+    <div className={css.container}>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route
+            path="register"
+            element={
+              <RestrictedRoute
+                redirectTo="/contacts"
+                component={<Register />}
+              />
+            }
+          />
+          <Route
+            path="login"
+            element={
+              <RestrictedRoute redirectTo="/contacts" component={<Login />} />
+            }
+          />
+          <Route
+            path="contacts"
+            element={<PrivateRoute redirectTo="/" component={<Phonebook />} />}
+          />
+          {/* <Route path="profile" element={<PrivateRoute redirectTo="/" component={<ProfileView />} />}/>
+          <Route path="profile/edit" element={<PrivateRoute redirectTo="/" component={<EditProfileView />} />}/> */}
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
     </div>
   );
 };
