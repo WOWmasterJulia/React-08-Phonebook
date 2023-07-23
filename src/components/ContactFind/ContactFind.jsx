@@ -15,7 +15,7 @@ export const ContactFind = () => {
   };
 
     return (
-      <>
+      <div className={css.wrap_find}>
         <label className={css.find_label} htmlFor={inputId}>
           Find contacts by name
         </label>
@@ -31,6 +31,6 @@ export const ContactFind = () => {
           required
           onChange={changeFilter}
         />
-      </>
+      </div>
     );
 };

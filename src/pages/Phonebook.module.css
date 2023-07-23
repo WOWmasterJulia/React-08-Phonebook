@@ -6,6 +6,8 @@
     rgba(255, 100, 124, 1) 100%
   );
   margin: 50px auto 0;
-  padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   border-radius: 15px;
+  padding: 40px;
 }

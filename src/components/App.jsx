@@ -6,8 +6,10 @@ import { lazy, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { RestrictedRoute } from './RestrictedRoute';
 import { PrivateRoute } from './PrivateRoute';
+import { Container } from './Container/Container';
 
-import css from './App.module.css'
+// import css from './App.module.css'
+
 const Register = lazy(() => import('../pages/Register'));
 const Home = lazy(() => import('../pages/Home'));
 const Login = lazy(() => import('../pages/Login'));
@@ -25,7 +27,7 @@ export const App = () => {
   return isRefreshing ? (
     <b>Refreshing user...</b>
   ) : (
-    <div className={css.container}>
+    <Container>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -53,7 +55,7 @@ export const App = () => {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-    </div>
+    </Container>
   );
 };
 

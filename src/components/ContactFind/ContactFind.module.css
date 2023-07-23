@@ -4,26 +4,26 @@
     font-size: 16px;
     text-align: center;
     color: white;
-        /* align-items: center;
-            display: flex;
-            flex-direction: column; */
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
     
 }
-
+.wrap_find {
+   align-items: center;
+   display: flex;
+    flex-direction: column; 
+   
+}
 .find_input {
     min-width: 250px;
     min-height: 26px;
-    margin-bottom: 10px;
     font-size: 16px;
     outline: none;
     border-radius: 5px;
     border-width: 0;
+    margin-bottom: 15px;
     padding: 5px 10px;
-   
-    display: flex;
-    justify-content: center; 
-    margin-right: auto;
-        margin-left: auto;
     
 }
 
