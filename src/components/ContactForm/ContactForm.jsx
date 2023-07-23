@@ -6,6 +6,7 @@ import { selectContacts } from 'redux/selectors';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
 
+
 const nameInputId = nanoid();
 const numberInputId = nanoid();
 
@@ -69,7 +70,7 @@ export const ContactForm = () => {
           // pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
           placeholder="Enter name"
         />
-        <ErrorMessage name="name" />
+        <ErrorMessage name="name" className={css.errorMessage} />
         <label htmlFor={numberInputId} className={css.labelForm}>
           Number
         </label>
@@ -81,7 +82,7 @@ export const ContactForm = () => {
           // pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
           placeholder="Enter phone number"
         />
-        <ErrorMessage name="number" />
+        <ErrorMessage name="number" className={css.errorMessage} />
         <button className={css.btnForm} type="submit">
           Add contact
         </button>
