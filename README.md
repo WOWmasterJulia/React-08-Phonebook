@@ -1,4 +1,4 @@
-# TWEET CARDS | REACT
+# PHONE BOOK | REACT
 
 ![Phonebook](./assets/React-08.jpg)
 
