@@ -1,3 +1,16 @@
+# TWEET CARDS | REACT
+
+![Phonebook](https://github.com/WOWmasterJulia/tweet-cards/blob/main/src/assets/React-08.jpg)
+
+## Технічний стек / Technical stack
+
+![React](https://img.shields.io/badge/React-%23007ACC.svg?style=for-the-badge&logo=react&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux-%23764ABC.svg?style=for-the-badge&logo=redux&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-%23000000.svg?style=for-the-badge&logo=axios&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-%23000000.svg?style=for-the-badge&logo=react-router&logoColor=white)
+
+
+
 # React homework template
 
 Этот проект был создан при помощи
