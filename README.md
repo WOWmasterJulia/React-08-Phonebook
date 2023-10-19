@@ -1,6 +1,6 @@
 # TWEET CARDS | REACT
 
-![Phonebook](https://github.com/WOWmasterJulia/React-08-Phonebook/blob/main/src/assets/React-08.jpg)
+![Phonebook](https://github.com/WOWmasterJulia/React-08-Phonebook/blob/main/assets/React-08.jpg)
 
 ## Технічний стек / Technical stack
 
