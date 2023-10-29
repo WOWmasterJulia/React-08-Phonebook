@@ -24,8 +24,6 @@ export const store = configureStore({
   reducer: {
     auth: persistReducer(authPersistConfig, authReducer),
     contacts: contactsReducer,
-
-  // !!!!!!!! Убрала s в filrer
     filter: filtersReducer,
   },
   middleware: getDefaultMiddleware =>
@@ -40,13 +38,4 @@ export const store = configureStore({
 export const persistor = persistStore(store);
 
 
-// import { configureStore } from "@reduxjs/toolkit";
-// import { filtersReducer } from './filterSlice';
-// import { contactsReducer } from './contactsSlice';
 
-// export const store = configureStore({
-//   reducer: {
-//     filters: filtersReducer,
-//     contacts: contactsReducer,
-//   },
-// });
