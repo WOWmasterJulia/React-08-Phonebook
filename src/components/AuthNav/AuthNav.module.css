@@ -13,6 +13,5 @@
 }
 
 .link:hover {
-    /* box-shadow: 3px 3px 13px 9px rgba(44, 90, 247, 0.68); */
     border: 3px #21d4fd solid;
 }

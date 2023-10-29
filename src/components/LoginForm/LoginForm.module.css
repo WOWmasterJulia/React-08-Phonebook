@@ -1,13 +1,5 @@
 .form {
     width: 320px;
-    /* background: rgb(204, 100, 254);
-    background: linear-gradient(
-    -135deg,
-    rgba(204, 100, 254, 1) 0%,
-    rgba(255, 100, 124, 1) 100%
-    ); */
-    /* background: rgb(204,100,254);
-background: linear-gradient(45deg, rgba(204,100,254,1) 0%, rgba(100,224,255,1) 100%); */
 background: rgb(204,100,254);
 background: linear-gradient(45deg, rgba(204,100,254,1) 0%, rgba(33,212,253,1) 100%);
     margin: 50px auto 0;

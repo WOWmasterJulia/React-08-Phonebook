@@ -16,11 +16,7 @@
 }
 
 .btnLogout {
-    /* border: 1px solid black;
-    border-radius: 5px;*/
     font-weight: 500;
-    /* font-size: 16px;  */
-    /* width: 100px; */
     padding: 5px 10px;
     min-width: 80px;
     font-family: inherit;
@@ -45,19 +41,3 @@
     fill: #ffffff;
 }
 
-/* .delete_btn {
-    padding: 5px 10px;
-    min-width: 80px;
-    font-family: inherit;
-    font-size: 16px;
-
-    margin: 0;
-    margin-left: auto;
-
-    background-color: white;
-    border: 2px #21d4fd solid;
-    border-radius: 5px;
-
-    font-size: 16px;
-    font-family: inherit;
-} */

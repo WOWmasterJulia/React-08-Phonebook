@@ -6,14 +6,12 @@
     color: white;
     align-items: center;
     display: flex;
-    flex-direction: column; 
-    
+    flex-direction: column;     
 }
 .wrap_find {
    align-items: center;
    display: flex;
-    flex-direction: column; 
-   
+    flex-direction: column;   
 }
 .find_input {
     min-width: 250px;
@@ -26,8 +24,3 @@
     padding: 5px 10px;
     
 }
-
-/* .find_input:hover,
-.find_input:focus {
-    box-shadow: 3px 3px 13px 9px rgba(44, 90, 247, 0.68);
-} */

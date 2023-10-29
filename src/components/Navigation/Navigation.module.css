@@ -5,7 +5,6 @@
     margin-right: 10px;
     font-weight: 600;
     color: #2a363b;
-    /* border-radius: 5px; */
 }
 
 .link.active {
@@ -13,8 +12,5 @@
 }
 
 .link:hover {
-    /* box-shadow: 3px 3px 13px 9px rgba(44, 90, 247, 0.68); */
-    /* border: 3px #21d4fd solid; */
-    /* border-bottom: 3px solid #21d4fd;*/
     color:#21d4fd;
 } 

@@ -8,8 +8,6 @@ import { RestrictedRoute } from './RestrictedRoute';
 import { PrivateRoute } from './PrivateRoute';
 import { Container } from './Container/Container';
 
-// import css from './App.module.css'
-
 const Register = lazy(() => import('../pages/Register'));
 const Home = lazy(() => import('../pages/Home'));
 const Login = lazy(() => import('../pages/Login'));
@@ -50,43 +48,9 @@ export const App = () => {
             path="contacts"
             element={<PrivateRoute redirectTo="/" component={<Phonebook />} />}
           />
-          {/* <Route path="profile" element={<PrivateRoute redirectTo="/" component={<ProfileView />} />}/>
-          <Route path="profile/edit" element={<PrivateRoute redirectTo="/" component={<EditProfileView />} />}/> */}
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </Container>
   );
 };
-
-
-// import { ContactForm } from './ContactForm/ContactForm';
-// import { ContactList } from './ContactList/ContactList';
-// import { ContactFind } from './ContactFind/ContactFind';
-// import { useDispatch, useSelector } from 'react-redux';
-// import { useEffect } from 'react';
-// import { fetchAllContacts } from 'redux/operations';
-// import { selectIsLoading, selectError } from 'redux/selectors';
-// import css from './App.module.css'
-
-// export const App = () => {
-//   const dispatch = useDispatch();
-//    // Получаем части состояния
-//   const isLoading = useSelector(selectIsLoading);
-//   const error = useSelector(selectError);
-//   // Вызываем операцию
-//   useEffect(() => {
-//     dispatch(fetchAllContacts());
-//   }, [dispatch]);
-
-// return (
-//       <div>
-//         <h1 className={css.h1}>Phonebook</h1>
-//         <ContactForm />
-//         <h2 className={css.h2}>Contacts</h2>
-//         <ContactFind />
-//         {isLoading && !error && <b>Request in progress...</b>}
-//         <ContactList /> 
-//       </div>
-//     );
-// }
